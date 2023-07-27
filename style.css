@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width:100vw;
+    height: 100vh;
+    display: flex;;
+    justify-content: space-between;
+}
+.leftDiv{
+    border: 3px solid black;
+    width: 50%;
+    height: 100%;
+    border-radius: 0 100px 100px 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all 2s;
+}
+.subLeftDiv{
+width: 90%;
+height: 90%;
+background-color: brown;
+border-radius: 0 100px 100px 0;
+
+}
+.rightDiv{
+    border: 3px solid black;
+    width: 50%;
+    height: 100%;
+    border-radius: 100px 0 0 100px;
+    background-color: white;
+    position: relative;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    transition: all 2s;
+
+}
+.subrightDiv{
+    width: 90%;
+    height: 90%;
+    /* position: absolute;
+    /* right: 0; */
+    background-color: brown;
+    border-radius: 100px 0 0 100px;
+    
+}
+.passwordBox{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid black;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.topArea{
+    width:245px;
+        height: 50px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50px 50px 0 0;
+        background-color: rgb(247, 176, 176);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        
+}
+.middleArea{
+    width: 245px;
+        height: 140px;
+        background-color: rgb(255, 255, 255);
+        padding: 2px;        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        column-gap: 2px;
+        row-gap: 2px;
+}
+.no{
+    background-color: brown;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.no:nth-child(10)
+{
+    /* background-color: blueviolet; */
+    grid-column: 1/4;
+}
+.bottomArea{
+    width: 245px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 50px 50px;
+
+}
+.Check{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 50px 50px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(123, 187, 40);
+    cursor: pointer;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    font-weight: bold;
+animation: glow 1s ease-in-out infinite alternate;
+}
+.face{
+    font-size: 70px;
+animation: glowface 1s ease-in-out infinite alternate;
+
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fc6fb5, 0 0 30px #9c024f, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #dd69a3, 0 0 40px #f77ab8, 0 0 50px #ff4da6, 0 0 60px #e273ab, 0 0 70px #810443, 0 0 80px #eb1881;
+  }
+    
+}
+@-webkit-keyframes glowface {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #f8ff95, 0 0 30px #fcef7c, 0 0 40px #fceb8e, 0 0 50px #ffec3c, 0 0 60px #ffe346, 0 0 70px #ffdb10;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #dd69a3, 0 0 40px #f77ab8, 0 0 50px #ff4da6, 0 0 60px #e273ab, 0 0 70px #810443, 0 0 80px #eb1881;
+    }
+      
+  }
+.text{
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
